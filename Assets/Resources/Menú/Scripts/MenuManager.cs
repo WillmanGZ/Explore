@@ -14,7 +14,14 @@ public class MenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       // Buscar el objeto de música en la escena
+        musica = FindObjectOfType<AudioSource>();
+
+        if (musica != null)
+        {
+            // Establecer el sprite del botón según el estado de mute
+            ActualizarEstadoMusica();
+        } 
     }
 
     // Update is called once per frame
@@ -42,21 +49,25 @@ public class MenuManager : MonoBehaviour
         
     }
 
-    public void BotonMusica() //Prende o apaga la musica, cambiando sus sprites entre muted y on
+     private void ActualizarEstadoMusica()
     {
-        if (musica !=null)
+        if (musica.mute)
         {
-            if(musica.mute == false)
-            {
-                boton_musica.sprite = boton_musica_off;
-                musica.mute = true;
-            } 
-            else if(musica.mute == true)
-            {
-                boton_musica.sprite = boton_musica_on;
-                musica.mute = false;
-            }
-            
+            boton_musica.sprite = boton_musica_off;
+        }
+        else
+        {
+            boton_musica.sprite = boton_musica_on;
+        }
+    }
+
+    public void BotonMusica()
+    {
+        if (musica != null)
+        {
+            // Cambiar el estado de mute y actualizar el sprite del botón
+            musica.mute = !musica.mute;
+            ActualizarEstadoMusica();
         }
     }
 }

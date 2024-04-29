@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManagerTL : MonoBehaviour
 {
     public GameObject panel1;
     public GameObject panel2;
@@ -13,12 +13,14 @@ public class GameManager : MonoBehaviour
     public GameObject panel5;
     public GameObject panel6;
 
+
     public GameObject slot1;
     public GameObject slot2;
     public GameObject slot3;
     public GameObject slot4;
     public GameObject slot5;
     public GameObject slot6;
+
 
     public GameObject contenedor1;
     public GameObject contenedor2;
@@ -54,7 +56,7 @@ public class GameManager : MonoBehaviour
         contenedores.Add(contenedor5);
         contenedores.Add(contenedor6);
         
-        List<int> numeros = new List<int> { 0, 1, 2, 3, 4, 5 };
+        List<int> numeros = new List<int> { 0, 1, 2, 3, 4, 5};
         int[] index = new int[6];
         
         for (int i = 0; i < 6; i++)

@@ -44,7 +44,7 @@ public class DropPanel : MonoBehaviour, IDropHandler
 
             currentChild.transform.SetParent(startParent);
             currentChild.transform.position = startParent.position;
-            currentChild.GetComponent<RectTransform>().sizeDelta = GetComponent<RectTransform>().sizeDelta;
+            currentChild.GetComponent<RectTransform>().sizeDelta = startParent.GetComponent<RectTransform>().sizeDelta;
         }
 
     }

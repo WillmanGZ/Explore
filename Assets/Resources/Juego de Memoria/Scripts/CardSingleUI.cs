@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +17,4 @@ public class CardSingleUI : MonoBehaviour
     [SerializeField] private GameObject cardFront;
 
     private bool objectMatch;
-
-    [(Header)]
 }
