@@ -14,7 +14,7 @@ public class DropSlots : MonoBehaviour, IDropHandler
     public void OnDrop(PointerEventData eventData) //Para saber cuando el panel le caiga encima
     {
         // Obtener el objeto arrastrado
-        GameObject itemDragging = DragHandler.itemDragging;
+        GameObject itemDragging = DragHand.itemDragging;
 
         // Si no hay un objeto arrastrado, salir del método
         if (!itemDragging)
