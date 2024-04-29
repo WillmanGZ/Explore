@@ -205,8 +205,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 192679833}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 192679835}
+        m_TargetAssemblyTypeName: GameManagerTL, Assembly-CSharp
         m_MethodName: BotonInstrucciones
         m_Mode: 1
         m_Arguments:
@@ -631,7 +631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 192679834}
-  - component: {fileID: 192679833}
+  - component: {fileID: 192679835}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -639,7 +639,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &192679833
+--- !u!4 &192679834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192679832}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1001.31744, y: 411.1826, z: -1.3611127}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &192679835
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -648,7 +663,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 192679832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 085674933f7bf5041b529e5f5df470bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c6e4fd9bebaba64aa9afd1cba68613e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   panel1: {fileID: 1943700966}
@@ -673,21 +688,6 @@ MonoBehaviour:
   AvisoIncorrecto: {fileID: 154410238}
   TextoPuntaje: {fileID: 1461962586}
   Instrucciones: {fileID: 804920306}
---- !u!4 &192679834
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 192679832}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1001.31744, y: 411.1826, z: -1.3611127}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &219174691
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,8 +863,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 192679833}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 192679835}
+        m_TargetAssemblyTypeName: GameManagerTL, Assembly-CSharp
         m_MethodName: BotonSalirCorrecto
         m_Mode: 1
         m_Arguments:
@@ -1869,8 +1869,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 192679833}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 192679835}
+        m_TargetAssemblyTypeName: GameManagerTL, Assembly-CSharp
         m_MethodName: BotonBack
         m_Mode: 1
         m_Arguments:
@@ -2173,8 +2173,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 192679833}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 192679835}
+        m_TargetAssemblyTypeName: GameManagerTL, Assembly-CSharp
         m_MethodName: BotonReiniciarIncorrecto
         m_Mode: 1
         m_Arguments:
@@ -2305,8 +2305,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 192679833}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 192679835}
+        m_TargetAssemblyTypeName: GameManagerTL, Assembly-CSharp
         m_MethodName: asignarPosiciones
         m_Mode: 1
         m_Arguments:
@@ -2696,8 +2696,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 192679833}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 192679835}
+        m_TargetAssemblyTypeName: GameManagerTL, Assembly-CSharp
         m_MethodName: BotonSalirInstrucciones
         m_Mode: 1
         m_Arguments:
@@ -3060,7 +3060,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2ea6f88538436da47ba1f4e6d438a3d5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1bb10651c2a0d1c42adca3bf86afb581, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3513,8 +3513,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 192679833}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 192679835}
+        m_TargetAssemblyTypeName: GameManagerTL, Assembly-CSharp
         m_MethodName: ComprobarPosiciones
         m_Mode: 1
         m_Arguments:
