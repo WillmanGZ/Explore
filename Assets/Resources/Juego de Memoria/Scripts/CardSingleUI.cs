@@ -16,6 +16,4 @@ public class CardSingleUI : MonoBehaviour
     [SerializeField] private GameObject cardFront;
 
     private bool objectMatch;
-
-    [(Header)]
 }
