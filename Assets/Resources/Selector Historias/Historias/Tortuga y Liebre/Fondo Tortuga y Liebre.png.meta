@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c5b60ccfdc237c24e821d2be811c95a6
+guid: 1bb10651c2a0d1c42adca3bf86afb581
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,112 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: instrucciones_miniboton
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 304
-        width: 88
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd911ade251093043b63280b578ed569
-      internalID: 227726681
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: back_miniboton
-      rect:
-        serializedVersion: 2
-        x: 123
-        y: 305
-        width: 88
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83dedcaade884184cbe11334d74146ab
-      internalID: 486880724
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cancel_miniboton
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 306
-        width: 88
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 576e63920590a744a8d438f0f0fd6ca1
-      internalID: 2142709236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reiniciar_boton
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 231
-        width: 298
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c52b27976c51a614fb142106baa2b61a
-      internalID: 150460434
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: confirmar_boton
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 159
-        width: 298
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4c68000a69082f4d9d2434cee59b2e3
-      internalID: -918814765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -224,12 +119,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      back_miniboton: 486880724
-      cancel_miniboton: 2142709236
-      confirmar_boton: -918814765
-      instrucciones_miniboton: 227726681
-      reiniciar_boton: 150460434
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
