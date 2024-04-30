@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pez Payaso
+  m_Text: Hormiga
 --- !u!222 &70867193
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -237,7 +237,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -33.3145}
-  m_SizeDelta: {x: 160, y: 96.6289}
+  m_SizeDelta: {x: 220, y: 96.6289}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &71522735
 MonoBehaviour:
@@ -272,7 +272,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Aguila
+  m_Text: Rinoceronte
 --- !u!222 &71522736
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -632,7 +632,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Perro
+  m_Text: Tigre
 --- !u!222 &577981744
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -881,7 +881,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Rinoceronte
+  m_Text: Elefante
 --- !u!222 &685070060
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1173,7 +1173,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hormiga
+  m_Text: Jirafa
 --- !u!222 &916093003
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1813,7 +1813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2dc930d487d2ed340bf29dea5d820dc6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ce587a584e5e924499e3e61c5ccfd1b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
