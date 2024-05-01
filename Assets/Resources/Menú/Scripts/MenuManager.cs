@@ -12,11 +12,19 @@ public class MenuManager : MonoBehaviour
     public Sprite boton_musica_on;//Sprite del boton musica encendio
     public Image boton_musica;//Selector del objeto boton musica
     // Start is called before the first frame update
+
+    void Awake()
+    {
+        GameObject musica_anterior = GameObject.Find("Musica Menu1");
+
+        if (musica_anterior != null){
+            musica = musica_anterior.GetComponent<AudioSource>();
+            Destroy(musica_anterior);
+        }
+
+    }
     void Start()
     {
-       // Buscar el objeto de música en la escena
-        musica = FindObjectOfType<AudioSource>();
-
         if (musica != null)
         {
             // Establecer el sprite del botón según el estado de mute
@@ -68,6 +76,22 @@ public class MenuManager : MonoBehaviour
             // Cambiar el estado de mute y actualizar el sprite del botón
             musica.mute = !musica.mute;
             ActualizarEstadoMusica();
+        }
+    }
+
+    void DestroyObjectByName(string nombreObjeto)
+    {
+        GameObject objetoBuscado = GameObject.Find(nombreObjeto);
+
+        if (objetoBuscado != null)
+        {
+            // El objeto fue encontrado, destruirlo
+            Destroy(objetoBuscado);
+        }
+        else
+        {
+            // El objeto no fue encontrado
+            Debug.LogWarning("El objeto con nombre '" + nombreObjeto + "' no se encontró en la escena.");
         }
     }
 }
