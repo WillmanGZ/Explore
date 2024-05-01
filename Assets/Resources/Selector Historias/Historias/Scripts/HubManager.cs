@@ -19,7 +19,11 @@ public class HUB : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+         if (musica != null)
+        {
+            // Establecer el sprite del botón según el estado de mute
+            ActualizarEstadoMusica();
+        } 
     }
 
     // Update is called once per frame
