@@ -10,10 +10,10 @@ public class ShowDatos : MonoBehaviour
     {
         { "León", "Soy el único felino que vive en manada." },
         { "Hormiga", "Puedo levantar hasta 50 veces mi propio peso." },
-        { "Águila", "Tengo la vista más aguda de todas las aves." },
+        { "Jirafa", "Tengo la vista más aguda de todas las aves." },
         { "Rinoceronte", "Mi piel es tan dura que las balas pueden rebotar en ella." },
-        { "Perro", "Soy el mejor amigo del hombre." },
-        { "Pez Payaso", "Soy un maestro del camuflaje y puedo cambiar de color." }
+        { "Elefante", "Soy el mejor amigo del hombre." },
+        { "Tigre", "Soy un maestro del camuflaje y puedo cambiar de color." }
     };
 
     // References to UI elements
