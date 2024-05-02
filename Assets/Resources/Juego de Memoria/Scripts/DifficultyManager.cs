@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class DifficultyManager : MonoBehaviour
 {
+
     public static DifficultyManager Instance { get; private set; }
 
     [SerializeField] private GameObject difficultySelector;
@@ -29,7 +30,7 @@ public class DifficultyManager : MonoBehaviour
 
     private void Start()
     {
-        
+
     }
 
     public DifficultyManager OnCloseButtonClick(Action onClick)
@@ -40,7 +41,7 @@ public class DifficultyManager : MonoBehaviour
             .Show()
             .OnComplete(() =>
             {
-                
+
                 onClick?.Invoke();
             });
         });
@@ -84,6 +85,7 @@ public class DifficultyManager : MonoBehaviour
     {
         hardButton.onClick.AddListener(() =>
         {
+
             hardButton.GetComponent<TweenerUI>()
             .Show()
             .OnComplete(() =>
