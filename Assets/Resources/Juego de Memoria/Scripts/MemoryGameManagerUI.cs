@@ -26,7 +26,7 @@ public class MemoryGameManagerUI : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
 
-        DifficultyManager.Instance
+       DifficultyManager.Instance   // ERROR???
             .ResetListeners()
             .OnEasyButtonClick(() =>
             {
@@ -74,7 +74,7 @@ public class MemoryGameManagerUI : MonoBehaviour
     private IEnumerator OnCompleteGame()
     {
         yield return new WaitForSeconds(0.75f);
-
+        Puntaje.Instance.GetScore(); // metodo para obtener el puntaje
         //Hacer asignar los puntos cuando ganes
 
         Debug.Log("Has ganado");

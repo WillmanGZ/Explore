@@ -48,6 +48,7 @@ public class CardGroup : MonoBehaviour
             }
             else
             {
+                Puntaje.Instance.falla();   // se reduce 5 puntos si no son la misma carta
                 StartCoroutine(DontMatch());
             }
         }

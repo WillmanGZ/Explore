@@ -53,9 +53,7 @@ public class DifficultyManager : MonoBehaviour
     {
         easyButton.onClick.AddListener(() =>
         {
-            easyButton.GetComponent<TweenerUI>()
-            .Show()
-            .OnComplete(() =>
+            easyButton.GetComponent<TweenerUI>().Show().OnComplete(() =>// ERROR???
             {
                 difficulty = DifficultyEnum.Easy;
                 onClick?.Invoke();
@@ -69,9 +67,7 @@ public class DifficultyManager : MonoBehaviour
     {
         normalButton.onClick.AddListener(() =>
         {
-            normalButton.GetComponent<TweenerUI>()
-            .Show()
-            .OnComplete(() =>
+            normalButton.GetComponent<TweenerUI>().Show().OnComplete(() =>// ERROR???
             {
                 difficulty = DifficultyEnum.Normal;
                 onClick?.Invoke();
@@ -86,9 +82,7 @@ public class DifficultyManager : MonoBehaviour
         hardButton.onClick.AddListener(() =>
         {
 
-            hardButton.GetComponent<TweenerUI>()
-            .Show()
-            .OnComplete(() =>
+            hardButton.GetComponent<TweenerUI>().Show().OnComplete(() =>// ERROR???
             {
                 difficulty = DifficultyEnum.Hard;
                 onClick?.Invoke();

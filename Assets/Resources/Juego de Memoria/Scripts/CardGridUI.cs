@@ -24,14 +24,14 @@ public class CardGridUI : MonoBehaviour
 
     private void OnEnable()
     {
-        FillGrid();
+        FillGrid();     // ERROR???
     }
 
     private void FillGrid()
     {
         int cardsToShow = 0;
 
-        switch (MemoryGameManagerUI.Instance.GetDifficulty())
+        switch (MemoryGameManagerUI.Instance.GetDifficulty())   // ERROR???
         {
             case DifficultyEnum.Easy:
                 cardsToShow = 6;
