@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MemoryGameManagerUI : MonoBehaviour
 {
-    public static MemoryGameManagerUI Instance { get; private set; }
+    public static MemoryGameManagerUI Instance { get; private set; }        // Singletone
 
     [SerializeField] private CardGroup cardGroup;
     [SerializeField] private List<CardSingleUI> cardSingleUIList = new List<CardSingleUI>();
@@ -26,7 +26,7 @@ public class MemoryGameManagerUI : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
 
-        DifficultyManager.Instance
+       DifficultyManager.Instance   // ERROR???
             .ResetListeners()
             .OnEasyButtonClick(() =>
             {
@@ -74,8 +74,8 @@ public class MemoryGameManagerUI : MonoBehaviour
     private IEnumerator OnCompleteGame()
     {
         yield return new WaitForSeconds(0.75f);
-
-        //Hacer cualquier cosa cuando ganes
+        Puntaje.Instance.GetScore(); // metodo para obtener el puntaje
+        //Hacer asignar los puntos cuando ganes
 
         Debug.Log("Has ganado");
 
