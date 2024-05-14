@@ -29,22 +29,22 @@ public class CardGridUI : MonoBehaviour
 
     private void FillGrid()
     {
-        int cardsToShow = 0;
+        int cardsToShow = 6;
 
-        switch (MemoryGameManagerUI.Instance.GetDifficulty())   // ERROR???
-        {
-            case DifficultyEnum.Easy:
-                cardsToShow = 6;
-                break;
-            case DifficultyEnum.Normal:
-                cardsToShow = 9;
-                break;
-            case DifficultyEnum.Hard:
-                cardsToShow = 12;
-                break;
-            default:
-                break;
-        }
+        //switch (MemoryGameManagerUI.Instance.GetDifficulty())   // ERROR???
+        //{
+        //    case DifficultyEnum.Easy:
+        //        cardsToShow = 6;
+        //        break;
+        //    case DifficultyEnum.Normal:
+        //        cardsToShow = 9;
+        //        break;
+        //    case DifficultyEnum.Hard:
+        //        cardsToShow = 12;
+        //        break;
+        //    default:
+        //        break;
+        //}
 
         for (int i = 0; i < cardsToShow; i++)
         {
