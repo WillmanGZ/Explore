@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SelectorHistorias/Bella Durmiente.unity
     guid: b4e0e4099c0ac1948a937232c11f207c
+  - enabled: 1
+    path: Assets/Scenes/MemoriaGame/JuegoMemoria.unity
+    guid: eb9cb1cb22211df47b113ab952b4bd28
+  - enabled: 1
+    path: Assets/Scenes/MemoriaGame/Dificultad.unity
+    guid: c2950af4835c34443a248ee46487925d
   m_configObjects: {}
