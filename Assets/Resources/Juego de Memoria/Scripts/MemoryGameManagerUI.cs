@@ -20,29 +20,32 @@ public class MemoryGameManagerUI : MonoBehaviour
     private void OnEnable()
     {
         StartCoroutine(Initialize());
+    
     }
 
     private IEnumerator Initialize()
     {
+        DifficultyManager.Instance.Toggle(false);
+        ToggleGameArea(true);
         yield return new WaitForSeconds(0.1f);
 
-       DifficultyManager.Instance   // ERROR???
-            .ResetListeners()
-            .OnEasyButtonClick(() =>
-            {
-                DifficultyManager.Instance.Toggle(false);
-                ToggleGameArea(true);
-            })
-            .OnNormalButtonClick(() =>
-            {
-                DifficultyManager.Instance.Toggle(false);
-                ToggleGameArea(true);
-            })
-            .OnHardButtonClick(() =>
-            {
-                DifficultyManager.Instance.Toggle(false);
-                ToggleGameArea(true);
-            });
+        //DifficultyManager.Instance   // ERROR???
+        //     .ResetListeners()
+        //     .OnEasyButtonClick(() =>
+        //     {
+        //         DifficultyManager.Instance.Toggle(false);
+        //         ToggleGameArea(true);
+        //     })
+        //     .OnNormalButtonClick(() =>
+        //     {
+        //         DifficultyManager.Instance.Toggle(false);
+        //         ToggleGameArea(true);
+        //     })
+        //     .OnHardButtonClick(() =>
+        //     {
+        //         DifficultyManager.Instance.Toggle(false);
+        //         ToggleGameArea(true);
+        //     });
     }
 
     private void Start()

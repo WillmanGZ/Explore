@@ -49,48 +49,48 @@ public class DifficultyManager : MonoBehaviour
         return this;
     }
 
-    public DifficultyManager OnEasyButtonClick(Action onClick)
-    {
-        easyButton.onClick.AddListener(() =>
-        {
-            easyButton.GetComponent<TweenerUI>().Show().OnComplete(() =>// ERROR???
-            {
-                difficulty = DifficultyEnum.Easy;
-                onClick?.Invoke();
-            });
-        });
+    //public DifficultyManager OnEasyButtonClick(Action onClick)
+    //{
+    //    easyButton.onClick.AddListener(() =>
+    //    {
+    //        easyButton.GetComponent<TweenerUI>().Show().OnComplete(() =>// ERROR???
+    //        {
+    //            difficulty = DifficultyEnum.Easy;
+    //            onClick?.Invoke();
+    //        });
+    //    });
 
-        return this;
-    }
+    //    return this;
+    //}
 
-    public DifficultyManager OnNormalButtonClick(Action onClick)
-    {
-        normalButton.onClick.AddListener(() =>
-        {
-            normalButton.GetComponent<TweenerUI>().Show().OnComplete(() =>// ERROR???
-            {
-                difficulty = DifficultyEnum.Normal;
-                onClick?.Invoke();
-            });
-        });
+    //public DifficultyManager OnNormalButtonClick(Action onClick)
+    //{
+    //    normalButton.onClick.AddListener(() =>
+    //    {
+    //        normalButton.GetComponent<TweenerUI>().Show().OnComplete(() =>// ERROR???
+    //        {
+    //            difficulty = DifficultyEnum.Normal;
+    //            onClick?.Invoke();
+    //        });
+    //    });
 
-        return this;
-    }
+    //    return this;
+    //}
 
-    public DifficultyManager OnHardButtonClick(Action onClick)
-    {
-        hardButton.onClick.AddListener(() =>
-        {
+    //public DifficultyManager OnHardButtonClick(Action onClick)
+    //{
+    //    hardButton.onClick.AddListener(() =>
+    //    {
 
-            hardButton.GetComponent<TweenerUI>().Show().OnComplete(() =>// ERROR???
-            {
-                difficulty = DifficultyEnum.Hard;
-                onClick?.Invoke();
-            });
-        });
+    //        hardButton.GetComponent<TweenerUI>().Show().OnComplete(() =>// ERROR???
+    //        {
+    //            difficulty = DifficultyEnum.Hard;
+    //            onClick?.Invoke();
+    //        });
+    //    });
 
-        return this;
-    }
+    //    return this;
+    //}
 
     public DifficultyManager ResetListeners()
     {
