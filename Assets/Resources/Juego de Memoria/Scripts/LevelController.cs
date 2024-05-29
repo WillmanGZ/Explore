@@ -59,6 +59,7 @@ public class LevelController : MonoBehaviour
         for (int i = 0; i < (_rows * _columns) / 2; i++)
         {
             int chosenType = gameTypes[UnityEngine.Random.Range(0, gameTypes.Count)];
+            gameTypes.Remove(chosenType);
             chosenTypes.Add(chosenType);
             chosenTypes.Add(chosenType);
         }
