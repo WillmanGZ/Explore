@@ -27,7 +27,7 @@ public class DificultadManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("_rows", 3);
         PlayerPrefs.SetInt("_columns", 2);
-        PlayerPrefs.SetInt("_movements", 8);
+        PlayerPrefs.SetInt("_movements", 6);
         PlayerPrefs.SetInt("_difficulty", 4);
 
         SceneManager.LoadScene(8);
@@ -36,7 +36,7 @@ public class DificultadManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("_rows", 4);
         PlayerPrefs.SetInt("_columns", 4);
-        PlayerPrefs.SetInt("_movements", 17);
+        PlayerPrefs.SetInt("_movements", 18);
         PlayerPrefs.SetInt("_difficulty", 12);
 
         SceneManager.LoadScene(8);
@@ -46,7 +46,7 @@ public class DificultadManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("_rows", 4);
         PlayerPrefs.SetInt("_columns", 6);
-        PlayerPrefs.SetInt("_movements", 20);
+        PlayerPrefs.SetInt("_movements", 25);
         PlayerPrefs.SetInt("_difficulty", 17);
 
         SceneManager.LoadScene(8);
