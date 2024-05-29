@@ -106,7 +106,7 @@ public class LevelController : MonoBehaviour
     private IEnumerator ProcessCardSelection()
     {
         _blockInput = true;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
 
         if (_firstCard.CardType == _secondCard.CardType)
         {
@@ -122,7 +122,7 @@ public class LevelController : MonoBehaviour
 
     private IEnumerator Score(CardController firstCard, CardController secondCard)
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         _cards.Remove(firstCard);
         Destroy(firstCard.gameObject);
         _cards.Remove(secondCard);
@@ -144,7 +144,7 @@ public class LevelController : MonoBehaviour
 
     private IEnumerator Fail(CardController firstCard, CardController secondCard)
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         firstCard.Hide();
         secondCard.Hide();
 
