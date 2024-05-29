@@ -99,7 +99,7 @@ public class GameManagerTL : MonoBehaviour
     public void ComprobarPosiciones(){
         if (panel1.transform.position == slot1.transform.position && panel2.transform.position == slot2.transform.position && panel3.transform.position == slot3.transform.position && panel4.transform.position == slot4.transform.position && panel5.transform.position == slot5.transform.position && panel6.transform.position == slot6.transform.position)
         {   
-            TextoPuntaje.text = "¡CORRECTO!\nTU PUNTAJE ES: " + puntaje;
+            TextoPuntaje.text = "CORRECTO!\nTU PUNTAJE ES: " + puntaje;
             AvisoCorrecto.SetActive(true);
         }
         else
