@@ -28,7 +28,7 @@ public class InicioManager : MonoBehaviour
 
     public void BotonCreditos() //Muestra los creditos
     {
-       SceneManager.LoadScene(8); 
+       SceneManager.LoadScene(2); 
     }
 
     public void BotonSalir() //Hace que se cierre la aplicacion. (Dentro del editor no se ejecuta el QUIT, solamente cuando el juego esté corriendo)
