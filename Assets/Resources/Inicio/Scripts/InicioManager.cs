@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class InicioManager : MonoBehaviour
 {
     public Renderer fondo; //Selecciona un material 3D para fondo
+    public GameObject configuraciones;
     
     // Start is called before the first frame update
     void Start()
@@ -34,5 +35,15 @@ public class InicioManager : MonoBehaviour
     public void BotonSalir() //Hace que se cierre la aplicacion. (Dentro del editor no se ejecuta el QUIT, solamente cuando el juego esté corriendo)
     {
         Application.Quit();
+    }
+
+    public void Configuraciones()
+    {
+        configuraciones.SetActive(true);
+    }
+
+    public void ExitConfiguraciones()
+    {
+        configuraciones.SetActive(false);
     }
 }
