@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class InicioManager : MonoBehaviour
 {
+    public GameObject canvas;
     public Renderer fondo; //Selecciona un material 3D para fondo
-    public GameObject configuraciones;
     
     // Start is called before the first frame update
     void Start()
@@ -37,13 +37,9 @@ public class InicioManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void Configuraciones()
+    public void BotonConfiguraciones()
     {
-        configuraciones.SetActive(true);
+        SceneManager.LoadScene(9);
     }
-
-    public void ExitConfiguraciones()
-    {
-        configuraciones.SetActive(false);
-    }
+    
 }
