@@ -44,7 +44,7 @@ public class PantallaCompleta : MonoBehaviour
     opciones.Add("950 x 540");
 
     // Establecer la resolución actual en función de PlayerPrefs
-    int resolucionActual = PlayerPrefs.GetInt("numeroResolucion", 0);
+    int resolucionActual = PlayerPrefs.GetInt("numeroResolucion", 1);
 
     resolucionesDropDown.AddOptions(opciones);
     resolucionesDropDown.value = resolucionActual;
