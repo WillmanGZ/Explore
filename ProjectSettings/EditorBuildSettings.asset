@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Juego de Memoria/Juego de Memoria.unity
     guid: eb9cb1cb22211df47b113ab952b4bd28
+  - enabled: 1
+    path: Assets/Scenes/Configuraciones.unity
+    guid: c198620105b0b4041b099d299dd5ed93
   m_configObjects: {}

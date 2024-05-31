@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class LevelController : MonoBehaviour
 {
+    public Renderer fondo;
     [SerializeField] private CardController _cardPrefab;
     [SerializeField] private GameObject MensajeCorrecto;
     [SerializeField] private GameObject MensajeIncorrecto;
@@ -166,23 +167,46 @@ public class LevelController : MonoBehaviour
         _movements = PlayerPrefs.GetInt("_movements");
         _difficulty = PlayerPrefs.GetInt("_difficulty");
         StartLevel();
+         fondo.GetComponent<Renderer>().sortingOrder = -3;
+    }
+
+    private void Update() {
+        //Hace que el objeto 3D se mueva 0.02f unidades en el eje X por segundo
+        fondo.material.mainTextureOffset = fondo.material.mainTextureOffset + new Vector2(0.02f,0)* Time.deltaTime;
     }
 
     private void Win()
     {
-        Desenfoque.SetActive(true);
-        MensajeCorrecto.SetActive(true);
+        StartCoroutine(Mensaje(true));
     }
 
     private void Lose()
     {
-        Desenfoque.SetActive(true);
-        MensajeIncorrecto.SetActive(true);
+        StartCoroutine(Mensaje(false));
     }
 
     public void Back()
     {
         SceneManager.LoadScene(7);
+    }
+
+    private IEnumerator Mensaje(bool Condicion)
+    {
+        if (Condicion)
+        {
+            Desenfoque.SetActive(true);
+            MensajeCorrecto.SetActive(true);
+            yield return new WaitForSeconds(4f);
+            SceneManager.LoadScene(7);
+        }
+        else
+        {
+            Desenfoque.SetActive(true);
+            MensajeIncorrecto.SetActive(true);
+            yield return new WaitForSeconds(4f);
+            SceneManager.LoadScene(7);
+        }
+        
     }
 }
 
