@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class LevelController : MonoBehaviour
 {
+    public Renderer fondo;
     [SerializeField] private CardController _cardPrefab;
     [SerializeField] private GameObject MensajeCorrecto;
     [SerializeField] private GameObject MensajeIncorrecto;
@@ -166,6 +167,12 @@ public class LevelController : MonoBehaviour
         _movements = PlayerPrefs.GetInt("_movements");
         _difficulty = PlayerPrefs.GetInt("_difficulty");
         StartLevel();
+         fondo.GetComponent<Renderer>().sortingOrder = -3;
+    }
+
+    private void Update() {
+        //Hace que el objeto 3D se mueva 0.02f unidades en el eje X por segundo
+        fondo.material.mainTextureOffset = fondo.material.mainTextureOffset + new Vector2(0.02f,0)* Time.deltaTime;
     }
 
     private void Win()
