@@ -41,7 +41,7 @@ public class GameManager3C : MonoBehaviour
 
     public GameObject AvisoCorrecto;
     public GameObject AvisoIncorrecto;
-    public Text TextoPuntaje;
+    public GameObject Desenfoque;
 
     public GameObject Instrucciones;
 
@@ -122,15 +122,13 @@ public class GameManager3C : MonoBehaviour
 
     }
     public void ComprobarPosiciones(){
-        if (panel1.transform.position == slot1.transform.position && panel2.transform.position == slot2.transform.position && panel3.transform.position == slot3.transform.position && panel4.transform.position == slot4.transform.position && panel5.transform.position == slot5.transform.position && panel6.transform.position == slot6.transform.position && panel7.transform.position == slot7.transform.position && panel8.transform.position == slot8.transform.position && panel9.transform.position == slot9.transform.position)
+        if (panel1.transform.position == slot1.transform.position && panel2.transform.position == slot2.transform.position && panel3.transform.position == slot3.transform.position && panel4.transform.position == slot4.transform.position && panel5.transform.position == slot5.transform.position && panel6.transform.position == slot6.transform.position)
         {   
-            TextoPuntaje.text = "CORRECTO!\nTU PUNTAJE ES: " + puntaje;
-            AvisoCorrecto.SetActive(true);
+            StartCoroutine(Mensaje(true));
         }
         else
         {
-            AvisoIncorrecto.SetActive(true);
-            RestarPuntaje();
+            StartCoroutine(Mensaje(false));
         }
     }
 
@@ -154,6 +152,14 @@ public class GameManager3C : MonoBehaviour
         Instrucciones.SetActive(false);
     }
 
+    public void BotonSalirReintentar()
+    {
+        asignarPosiciones();
+        Desenfoque.SetActive(false);
+        AvisoIncorrecto.SetActive(false);
+
+    }
+
     public void RestarPuntaje(){
         if (puntaje > 50)
         {
@@ -175,6 +181,22 @@ public class GameManager3C : MonoBehaviour
     void Update()
     {
 
+    }
+    private IEnumerator Mensaje(bool Condicion)
+    {
+        if (Condicion)
+        {
+            Desenfoque.SetActive(true);
+            AvisoCorrecto.SetActive(true);
+            yield return new WaitForSeconds(4f);
+            SceneManager.LoadScene(3);
+        }
+        else
+        {
+            Desenfoque.SetActive(true);
+            AvisoIncorrecto.SetActive(true);
+        }
+        
     }
 
     

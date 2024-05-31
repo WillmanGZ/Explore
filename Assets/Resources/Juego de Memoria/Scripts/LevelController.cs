@@ -192,7 +192,6 @@ public class LevelController : MonoBehaviour
 
     private IEnumerator Mensaje(bool Condicion)
     {
-        Debug.Log("Iniciando corrutina mensaje");
         if (Condicion)
         {
             Desenfoque.SetActive(true);
