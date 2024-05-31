@@ -177,19 +177,37 @@ public class LevelController : MonoBehaviour
 
     private void Win()
     {
-        Desenfoque.SetActive(true);
-        MensajeCorrecto.SetActive(true);
+        StartCoroutine(Mensaje(true));
     }
 
     private void Lose()
     {
-        Desenfoque.SetActive(true);
-        MensajeIncorrecto.SetActive(true);
+        StartCoroutine(Mensaje(false));
     }
 
     public void Back()
     {
         SceneManager.LoadScene(7);
+    }
+
+    private IEnumerator Mensaje(bool Condicion)
+    {
+        Debug.Log("Iniciando corrutina mensaje");
+        if (Condicion)
+        {
+            Desenfoque.SetActive(true);
+            MensajeCorrecto.SetActive(true);
+            yield return new WaitForSeconds(4f);
+            SceneManager.LoadScene(7);
+        }
+        else
+        {
+            Desenfoque.SetActive(true);
+            MensajeIncorrecto.SetActive(true);
+            yield return new WaitForSeconds(4f);
+            SceneManager.LoadScene(7);
+        }
+        
     }
 }
 
