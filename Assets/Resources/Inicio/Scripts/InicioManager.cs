@@ -8,11 +8,18 @@ public class InicioManager : MonoBehaviour
 {
     public GameObject canvas;
     public Renderer fondo; //Selecciona un material 3D para fondo
+    public AudioSource Musica;
+    
     
     // Start is called before the first frame update
     void Start()
     {
-        
+      AudioListener.volume = PlayerPrefs.GetFloat("volumenAudio", 0.5f);
+      int mute = PlayerPrefs.GetInt("musicaOn", 1);
+      if (mute == 0)
+      {
+        Musica.mute = true;
+      }
     }
 
     // Update is called once per frame
