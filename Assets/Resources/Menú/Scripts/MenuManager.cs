@@ -24,6 +24,7 @@ public class JuegoSelectorManager : MonoBehaviour
     public void botonBack(){
         SceneManager.LoadScene(0);
     }
+
     public void SelectorHistorias() //Muestra el contenedor en caso de no estar en la escena y muestra los minijuegos de español
     {
         SceneManager.LoadScene(3);
