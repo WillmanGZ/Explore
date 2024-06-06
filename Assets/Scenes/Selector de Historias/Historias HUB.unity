@@ -740,7 +740,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 7.3342285, y: -5.428772}
+  m_AnchoredPosition: {x: 7.3342285, y: -5.428711}
   m_SizeDelta: {x: -1485.8995, y: -817.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &616990213
@@ -1343,7 +1343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 473.4481, y: -5.4282837}
+  m_AnchoredPosition: {x: 473.448, y: -5.4282227}
   m_SizeDelta: {x: -1501.3253, y: -817.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &958919833
@@ -1472,6 +1472,11 @@ MonoBehaviour:
   TLPanel: {fileID: 45183052}
   BDPanel: {fileID: 1976600250}
   C3Panel: {fileID: 1962223050}
+  Musica: {fileID: 0}
+  panelOpcionesHistorias: {fileID: 0}
+  BotonReiniciar: {fileID: 0}
+  BotonPausa: {fileID: 0}
+  AudioTL: {fileID: 0}
 --- !u!4 &980752700
 Transform:
   m_ObjectHideFlags: 0
@@ -1522,7 +1527,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -475.115, y: -5.4282837}
+  m_AnchoredPosition: {x: -475.115, y: -5.4282227}
   m_SizeDelta: {x: -1493.4609, y: -817.6634}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1097806351

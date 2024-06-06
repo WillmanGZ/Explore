@@ -9,10 +9,11 @@ public class InicioManager : MonoBehaviour
     public GameObject canvas;
     public Renderer fondo; //Selecciona un material 3D para fondo
     
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+      
     }
 
     // Update is called once per frame
