@@ -30,6 +30,8 @@ public class LevelController : MonoBehaviour
 
     public static bool IsInputBlocked => _blockInput;
 
+    public GameObject Instrucciones;
+
     public void StartLevel()
     {
         if (_difficulty > _cardPrefab.MaxCardType)
@@ -207,6 +209,14 @@ public class LevelController : MonoBehaviour
             SceneManager.LoadScene(7);
         }
         
+    }
+
+    public void MostrarInstrucciones(){
+        Instrucciones.SetActive(true);
+    }
+
+    public void CerrarInstrucciones(){
+        Instrucciones.SetActive(false);
     }
 }
 

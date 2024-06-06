@@ -24,6 +24,7 @@ public class ConfiguracionesManager : MonoBehaviour
 
     public void ExitCongifuraciones() //Está en la escena de configuraciones
     {
+        PlayerPrefs.Save();
         SceneManager.LoadScene(0);
     }
 
