@@ -14,6 +14,8 @@ public class CardController : MonoBehaviour
     public float Cardsize = 2f;
     private Animator _animator;
 
+   
+
     private void Awake()
     {
         _animator = GetComponent<Animator>();
